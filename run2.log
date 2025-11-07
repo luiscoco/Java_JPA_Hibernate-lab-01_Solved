@@ -1,0 +1,786 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/C:/Program%20Files/Apache/apache-maven-3.9.5/lib/jansi-2.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/C:/Program%20Files/Apache/apache-maven-3.9.5/lib/guava-32.0.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+2025-11-07 08:28:16,179 [edu.jpa.Launcher.main()] DEBUG [org.jboss.logging] - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2025-11-07 08:28:16,236 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.HibernatePersistenceProvider] - Located and parsed 1 persistence units; checking each
+2025-11-07 08:28:16,236 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.HibernatePersistenceProvider] - Checking persistence-unit [name=persistenceUnits.lab01, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [persistenceUnits.lab01]
+2025-11-07 08:28:16,236 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.boot.spi.ProviderChecker] - Persistence-unit [persistenceUnits.lab01] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2025-11-07 08:28:16,239 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.jpa.internal.util.LogHelper] - PersistenceUnitInfo [
+	name: persistenceUnits.lab01
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Learn%20JVA-014%20Java%20Persistence%20with%20Hibernate/Labs%201/Labs/jpa-lab-01/target/classes
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names [
+		edu.jpa.entity.Company]
+	Mapping files names []
+	Properties [
+		jakarta.persistence.jdbc.password: root
+		hibernate.dialect: org.hibernate.dialect.MySQLDialect
+		hibernate.show_sql: true
+		jakarta.persistence.jdbc.url: jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+		jakarta.persistence.jdbc.driver: com.mysql.cj.jdbc.Driver
+		hibernate.hbm2ddl.auto: create
+		hibernate.format_sql: true
+		jakarta.persistence.jdbc.user: root]
+2025-11-07 08:28:16,241 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl] - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+2025-11-07 08:28:16,243 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl] - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2025-11-07 08:28:16,282 [edu.jpa.Launcher.main()] INFO [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-11-07 08:28:16,283 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.cfg.Environment] - HHH000206: 'hibernate.properties' not found
+2025-11-07 08:28:16,293 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+2025-11-07 08:28:16,295 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2025-11-07 08:28:16,295 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2025-11-07 08:28:16,296 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2025-11-07 08:28:16,296 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2025-11-07 08:28:16,296 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2025-11-07 08:28:16,296 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2025-11-07 08:28:16,296 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2025-11-07 08:28:16,297 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-11-07 08:28:16,297 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2025-11-07 08:28:16,298 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2025-11-07 08:28:16,298 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-11-07 08:28:16,298 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.idgen.factory] - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2025-11-07 08:28:16,304 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator] - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2025-11-07 08:28:16,305 [edu.jpa.Launcher.main()] INFO [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-11-07 08:28:16,382 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2aa93852
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2aa93852
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@2aa93852
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@3d5f6cca
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@3d5f6cca
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@12c3c7ce
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@12c3c7ce
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@713dcca2
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@713dcca2
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte -> org.hibernate.type.BasicTypeReference@1235117f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte -> org.hibernate.type.BasicTypeReference@1235117f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@1235117f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration binary -> org.hibernate.type.BasicTypeReference@54ca06cf
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@54ca06cf
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [B -> org.hibernate.type.BasicTypeReference@54ca06cf
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@58bb462f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@58bb462f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration image -> org.hibernate.type.BasicTypeReference@47fcd946
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration blob -> org.hibernate.type.BasicTypeReference@7d78962f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@7d78962f
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@79800b31
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@7b08a010
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration short -> org.hibernate.type.BasicTypeReference@5a1f60de
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration short -> org.hibernate.type.BasicTypeReference@5a1f60de
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@5a1f60de
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration integer -> org.hibernate.type.BasicTypeReference@63ef5c5c
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration int -> org.hibernate.type.BasicTypeReference@63ef5c5c
+2025-11-07 08:28:16,383 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@63ef5c5c
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration long -> org.hibernate.type.BasicTypeReference@1acf1a93
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration long -> org.hibernate.type.BasicTypeReference@1acf1a93
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@1acf1a93
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration float -> org.hibernate.type.BasicTypeReference@247931fa
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration float -> org.hibernate.type.BasicTypeReference@247931fa
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@247931fa
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration double -> org.hibernate.type.BasicTypeReference@541ac3b
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration double -> org.hibernate.type.BasicTypeReference@541ac3b
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@541ac3b
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@1cd50d73
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@1cd50d73
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@7eac97f8
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@7eac97f8
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration character -> org.hibernate.type.BasicTypeReference@13378f36
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration char -> org.hibernate.type.BasicTypeReference@13378f36
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@13378f36
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@1b9fd91f
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration string -> org.hibernate.type.BasicTypeReference@2f95e18a
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@2f95e18a
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@359ca0d7
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration characters -> org.hibernate.type.BasicTypeReference@1a7dd76d
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@1a7dd76d
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration [C -> org.hibernate.type.BasicTypeReference@1a7dd76d
+2025-11-07 08:28:16,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@7f4fb21c
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration text -> org.hibernate.type.BasicTypeReference@7f5685ce
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@2f1c08eb
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration clob -> org.hibernate.type.BasicTypeReference@5bae64da
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@5bae64da
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@59f3f2e1
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@59f3f2e1
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@124074e4
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@5d546d17
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@75744ad3
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@33d6da66
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@22a07fac
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@5ce2923a
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@b1769a7
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@b1769a7
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@e179749
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@e179749
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@2f6bc438
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@2f6bc438
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@6750e0ad
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@6750e0ad
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@573af7b1
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@573af7b1
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@65a59fc0
+2025-11-07 08:28:16,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@141ecd48
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@742b12ee
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@742b12ee
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@74ace4a5
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@3d3e2e6f
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@5fa8c00d
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@73381574
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@73381574
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@60a25e7a
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2ca34957
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration date -> org.hibernate.type.BasicTypeReference@35124c66
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@35124c66
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration time -> org.hibernate.type.BasicTypeReference@6326c05
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@6326c05
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7411a337
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7411a337
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7411a337
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@42cea513
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@42cea513
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@42cea513
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@6518b050
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@705faab2
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration instant -> org.hibernate.type.BasicTypeReference@92eb795
+2025-11-07 08:28:16,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@92eb795
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@3e7f6d9e
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@3e7f6d9e
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@3e7f6d9e
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@1e45d031
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@13c2e371
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration class -> org.hibernate.type.BasicTypeReference@6f2c7c83
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@6f2c7c83
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration currency -> org.hibernate.type.BasicTypeReference@2a7aef65
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@2a7aef65
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@2a7aef65
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration locale -> org.hibernate.type.BasicTypeReference@1a8e6643
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@1a8e6643
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@1ed3c708
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@1ed3c708
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@12976835
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@12976835
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@6febbcc5
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@6febbcc5
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration url -> org.hibernate.type.BasicTypeReference@6be6305
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@6be6305
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration vector -> org.hibernate.type.BasicTypeReference@6d50f5d
+2025-11-07 08:28:16,387 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2f2a0972
+2025-11-07 08:28:16,390 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration object -> org.hibernate.type.JavaObjectType@7f5083d2
+2025-11-07 08:28:16,390 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@7f5083d2
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration null -> org.hibernate.type.NullType@45864f90
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@4d88588
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6105db77
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@5e912c7
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@72643725
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@32d01824
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@7dc1b36a
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@3073e93f
+2025-11-07 08:28:16,391 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@637d3d0b
+2025-11-07 08:28:16,393 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@682d68b6] into BootstrapContext; was [null]
+2025-11-07 08:28:16,393 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@5d266f79] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@481a2586]
+2025-11-07 08:28:16,427 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.BootstrapContextImpl] - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2025-11-07 08:28:16,427 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2025-11-07 08:28:16,439 [edu.jpa.Launcher.main()] WARN [org.hibernate.orm.connections.pooling] - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-07 08:28:16,443 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2025-11-07 08:28:16,444 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+2025-11-07 08:28:16,444 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001001: Connection properties: {password=root, user=root}
+2025-11-07 08:28:16,444 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001003: Autocommit mode: false
+2025-11-07 08:28:16,446 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.connections.pooling] - Initializing Connection pool with 1 Connections
+2025-11-07 08:28:16,446 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-07 08:28:16,575 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] - Database ->
+	   name : MySQL
+	version : 8.0.44
+	  major : 8
+	  minor : 0
+2025-11-07 08:28:16,575 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] - Driver ->
+	   name : MySQL Connector/J
+	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+	  major : 8
+	  minor : 0
+2025-11-07 08:28:16,575 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] - JDBC version : 4.2
+2025-11-07 08:28:16,605 [edu.jpa.Launcher.main()] WARN [org.hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-07 08:28:16,605 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.44
+2025-11-07 08:28:16,609 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder] - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-11-07 08:28:16,609 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder] - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@79964e5f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@54818c19)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@59021315) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7136f4dd)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3a19b812) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@62201a0c)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2bf327e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d25be59)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a0b52c7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7819dbf0)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ae71f02) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@af0a771)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4a2d5182) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7cddc56c)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@e30dafa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1742f62)
+2025-11-07 08:28:16,621 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21f5cf8f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@33919878)
+2025-11-07 08:28:16,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry] - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-11-07 08:28:16,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry] - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-11-07 08:28:16,623 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry] - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-11-07 08:28:16,624 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry] - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-11-07 08:28:16,624 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry] - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-11-07 08:28:16,625 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration null -> org.hibernate.type.NullType@11156c0a
+2025-11-07 08:28:16,625 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@45864f90`
+2025-11-07 08:28:16,627 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-11-07 08:28:16,627 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-11-07 08:28:16,627 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-11-07 08:28:16,630 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-11-07 08:28:16,632 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-11-07 08:28:16,632 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-11-07 08:28:16,632 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.BasicTypeRegistry] - Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-11-07 08:28:16,633 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope] - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a948ef4] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7efb2fc9]
+2025-11-07 08:28:16,656 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.relational.Namespace] - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2025-11-07 08:28:16,672 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.EntityBinder] - Binding entity from annotated class: edu.jpa.entity.Company
+2025-11-07 08:28:16,675 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.EntityBinder] - Import with entity name Company
+2025-11-07 08:28:16,681 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.EntityBinder] - Bind entity edu.jpa.entity.Company on table Company
+2025-11-07 08:28:16,682 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.EntityBinder] - Adding secondary table to entity edu.jpa.entity.Company -> CompanyDetail
+2025-11-07 08:28:16,687 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AnnotatedColumn] - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-11-07 08:28:16,701 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AnnotatedColumn] - Binding column: AnnotatedColumn(column='Company_id')
+2025-11-07 08:28:16,703 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - Not known whether passed class name [edu.jpa.entity.Company] is safe
+2025-11-07 08:28:16,703 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.jpa.entity.Company
+2025-11-07 08:28:16,705 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - MetadataSourceProcessor property id with lazy=false
+2025-11-07 08:28:16,718 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AbstractPropertyHolder] - Attempting to locate auto-apply AttributeConverter for property [edu.jpa.entity.Company:id]
+2025-11-07 08:28:16,722 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - building BasicValue for id
+2025-11-07 08:28:16,724 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.mapping.BasicValue] - Skipping column re-registration: Company.Company_id
+2025-11-07 08:28:16,725 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - Building property id
+2025-11-07 08:28:16,727 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BinderHelper] - #makeIdGenerator(BasicValue([Column(Company_id)]), id, assigned, , ...)
+2025-11-07 08:28:16,727 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AnnotatedColumn] - Binding column: AnnotatedColumn(column='CompanyDetail_address')
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - MetadataSourceProcessor property address with lazy=false
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AbstractPropertyHolder] - Attempting to locate auto-apply AttributeConverter for property [edu.jpa.entity.Company:address]
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - building BasicValue for address
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.mapping.BasicValue] - Skipping column re-registration: CompanyDetail.CompanyDetail_address
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - Building property address
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AnnotatedColumn] - Binding column: AnnotatedColumn(column='Company_name')
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - MetadataSourceProcessor property name with lazy=false
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AbstractPropertyHolder] - Attempting to locate auto-apply AttributeConverter for property [edu.jpa.entity.Company:name]
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - building BasicValue for name
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.mapping.BasicValue] - Skipping column re-registration: Company.Company_name
+2025-11-07 08:28:16,728 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.PropertyBinder] - Building property name
+2025-11-07 08:28:16,729 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl] - HHH000194: Package not found or no package-info.java: edu.jpa.entity
+2025-11-07 08:28:16,733 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-11-07 08:28:16,734 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - Starting `BasicValueBinder#fillSimpleValue` for address
+2025-11-07 08:28:16,734 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.BasicValueBinder] - Starting `BasicValueBinder#fillSimpleValue` for name
+2025-11-07 08:28:16,736 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.model.internal.AnnotatedColumn] - Binding column: AnnotatedJoinColumn(column='Company_id',referencedColumn='Company_id')
+2025-11-07 08:28:16,736 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.mapping.PrimaryKey] - Forcing column [company_id] to be non-null as it is part of the primary key for table [companydetail]
+2025-11-07 08:28:16,738 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.mapping.PrimaryKey] - Forcing column [company_id] to be non-null as it is part of the primary key for table [company]
+2025-11-07 08:28:16,909 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryImpl] - Building session factory
+2025-11-07 08:28:16,945 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl] - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-11-07 08:28:16,945 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryImpl] - Instantiating SessionFactory with settings: {hibernate.format_sql=true, java.specification.version=25, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=C:\Program Files\Apache\apache-maven-3.9.5\boot\plexus-classworlds-2.7.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, javax.persistence.jdbc.user=****, javax.persistence.jdbc.url=jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC, maven.conf=C:\Program Files\Apache\apache-maven-3.9.5/conf, os.name=Windows 11, java.vm.specification.version=25, jakarta.persistence.jdbc.password=****, sun.java.launcher=SUN_STANDARD, user.country=US, local.setting.IS_JTA_TXN_COORD=false, sun.boot.library.path=C:\Program Files\Java\jdk-25\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -q -DskipTests exec:java, jdk.debug=release, maven.home=C:\Program Files\Apache\apache-maven-3.9.5, jakarta.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver, sun.cpu.endian=little, user.home=C:\Users\LEnriquez, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2025-09-16, java.home=C:\Program Files\Java\jdk-25, file.separator=\, java.vm.compressedOopsMode=Zero based, jakarta.persistence.jdbc.user=****, line.separator=
+, hibernate.persistenceUnitName=persistenceUnits.lab01, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver, hibernate.hbm2ddl.auto=create, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=25+37-LTS-3491, user.name=LEnriquez, stdout.encoding=Cp1252, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, skipTests=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\LENRIQ~1\AppData\Local\Temp\, java.version=25, user.dir=C:\Learn JVA-014 Java Persistence with Hibernate\Labs 1\Labs\jpa-lab-01, os.arch=amd64, maven.multiModuleProjectDirectory=C:\Learn JVA-014 Java Persistence with Hibernate\Labs 1\Labs\jpa-lab-01, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, org.slf4j.simpleLogger.defaultLogLevel=error, jakarta.persistence.jdbc.url=jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@5c16acf0, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;C:\Users\LENRIQ~1\AppData\Local\Temp\.tmpg5LClm;C:\Program Files\PowerShell\7;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\SqlCmd\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-21bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Apache\apache-maven-3.9.5\bin;C:\winutils-master\hadoop-3.3.1\bin;C:\spark-3.5.0-bin-hadoop3\bin;C:\kafka_2.13-3.6.1\bin\windows;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\Docker\Docker;C:\Python37;C:\Python37\Scripts;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\PowerShell\7\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LEnriquez\AppData\Local\pnpm;C:\Users\LEnriquez\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\LEnriquez\AppData\Local\Programs\Python\Python37\;C:\Users\LEnriquez\AppData\Local\Microsoft\WindowsApps;C:\Users\LEnriquez\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\LEnriquez\.dotnet\tools;C:\src\flutter\bin;C:\terraform;C:\Android SDK Platform-Tools;C:\Gradle\gradle-7.6\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\apache-maven-3.9.11\bin;C:\kafka_2.13-3.6.1\bin\windows;C:\tools\dart-sdk\bin;C:\Users\LEnriquez\AppData\Roaming\Pub\Cache\bin;C:\Users\LEnriquez\AppData\Local\Pub\Cache\bin;C:\Users\LEnriquez\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;C:\sqlite-tools-win32-x86-3420000;C:\Users\LEnriquez\AppData\Local\Coursier\data\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.3\bin;C:\Users\LEnriquez\.dotnet\tools;C:\Program Files\Apache\apache-maven-3.9.5\bin;C:\Program Files\OpenSSL-Wi;C:\Users\LEnriquez\AppData\Roaming\npm;c:\Users\LEnriquez\.vscode\extensions\openai.chatgpt-0.4.35-win32-x64\bin\windows-x86_64;., stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=25+37-LTS-3491, stdin.encoding=cp437, classworlds.conf=C:\Program Files\Apache\apache-maven-3.9.5\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, library.jansi.path=C:\Program Files\Apache\apache-maven-3.9.5\lib\jansi-native, javax.persistence.jdbc.password=****, java.class.version=69.0}
+2025-11-07 08:28:16,948 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryImpl] - Session factory constructed with filter configurations : {}
+2025-11-07 08:28:16,995 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2025-11-07 08:28:16,995 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2025-11-07 08:28:16,995 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2025-11-07 08:28:16,996 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2025-11-07 08:28:16,997 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@143dc18e] under count; prior registration was null
+2025-11-07 08:28:16,998 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@6f11a368] under every; prior registration was null
+2025-11-07 08:28:16,998 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@53a82ee6] under any; prior registration was null
+2025-11-07 08:28:16,998 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2025-11-07 08:28:16,999 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2025-11-07 08:28:17,001 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2025-11-07 08:28:17,002 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@60e9c18c] under sinh; prior registration was null
+2025-11-07 08:28:17,002 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6304b813] under cosh; prior registration was null
+2025-11-07 08:28:17,002 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@1033e4e9] under tanh; prior registration was null
+2025-11-07 08:28:17,002 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3a3c2f27] under pi; prior registration was null
+2025-11-07 08:28:17,002 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@14776c4d] under log; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2025-11-07 08:28:17,003 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : length -> character_length
+2025-11-07 08:28:17,004 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@2c61c0b] under position; prior registration was null
+2025-11-07 08:28:17,005 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@49a59619] under overlay; prior registration was null
+2025-11-07 08:28:17,005 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@6e0c13d2] under trim; prior registration was null
+2025-11-07 08:28:17,005 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@795f7a40] under cast; prior registration was null
+2025-11-07 08:28:17,005 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@77bc6fd9] under collate; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@191e2c1] under extract; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@3065938a] under ifnull; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2025-11-07 08:28:17,006 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2025-11-07 08:28:17,007 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@75d7abac] under pad; prior registration was null
+2025-11-07 08:28:17,007 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@2c37e5e0] under str; prior registration was null
+2025-11-07 08:28:17,009 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@674ac9fe] under format; prior registration was null
+2025-11-07 08:28:17,009 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@22fe780f] under timestampadd; prior registration was null
+2025-11-07 08:28:17,009 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@4538c5ee] under timestampdiff; prior registration was null
+2025-11-07 08:28:17,009 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : dateadd -> timestampadd
+2025-11-07 08:28:17,009 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : datediff -> timestampdiff
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@55234ab1] under current_date; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7dac7e20] under current_time; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@4d74f071] under current_timestamp; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : current date -> current_date
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : current time -> current_time
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : current timestamp -> current_timestamp
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@24bbdd61] under local_date; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@6b027d85] under local_time; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@754153bb] under local_datetime; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@1fdcd21a] under offset_datetime; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : local date -> local_date
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : local time -> local_time
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : local datetime -> local_datetime
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : offset datetime -> offset_datetime
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@65f65455] under instant; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : current_instant -> instant
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@4cf54e20] under sql; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@14776c4d
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log2)] under log2; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(reverse)] under reverse; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(space)] under space; prior registration was null
+2025-11-07 08:28:17,011 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@6300259e] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@55d77b5] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(day)] under day; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(month)] under month; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(year)] under year; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(hour)] under hour; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(minute)] under minute; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(second)] under second; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(microsecond)] under microsecond; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofweek)] under dayofweek; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofmonth)] under dayofmonth; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : day -> dayofmonth
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofyear)] under dayofyear; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(week)] under week; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(quarter)] under quarter; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(monthname)] under monthname; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayname)] under dayname; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_day)] under last_day; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(date)] under date; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(timestamp)] under timestamp; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(time)] under time; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_date)] under utc_date; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_time)] under utc_time; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_timestamp)] under utc_timestamp; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rand)] under rand; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(crc32)] under crc32; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha1)] under sha1; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha2)] under sha2; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha)] under sha; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_length)] under bit_length; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was NamedSqmFunctionTemplate(octet_length)
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(instr)] under instr; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@13aecc84] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@2c61c0b
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curtime)] under curtime; prior registration was null
+2025-11-07 08:28:17,012 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curdate)] under curdate; prior registration was null
+2025-11-07 08:28:17,013 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(now)] under now; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TruncFunction@276024dc] under trunc; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : truncate -> trunc
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(insert)] under insert; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@270f434e] under bitand; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6153d9b] under bitor; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@51efd521] under bitxor; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@778f4d04] under bitnot; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(datediff)] under datediff; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(adddate)] under adddate; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subdate)] under subdate; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(addtime)] under addtime; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subtime)] under subtime; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@2a477588] under format; prior registration was org.hibernate.dialect.function.FormatFunction@674ac9fe
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(makedate)] under makedate; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(maketime)] under maketime; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@6b027d85
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@754153bb
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was NamedSqmFunctionTemplate(localtime)
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5116cbe] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3a3c2f27
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2af8e7e0] under chr; prior registration was null
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registering alternate key : char -> chr
+2025-11-07 08:28:17,015 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@279268d6] under sysdate; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+2025-11-07 08:28:17,016 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+2025-11-07 08:28:17,017 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@7e3ade9c] under rank; prior registration was null
+2025-11-07 08:28:17,017 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@1f58356f] under dense_rank; prior registration was null
+2025-11-07 08:28:17,017 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@7c59ed56] under percent_rank; prior registration was null
+2025-11-07 08:28:17,017 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@64cfdae] under cume_dist; prior registration was null
+2025-11-07 08:28:17,017 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.sqm.function.SqmFunctionRegistry] - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@2247f27a] under listagg; prior registration was null
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - abs(NUMERIC arg)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double acos(NUMERIC arg)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - adddate(DATE datetime, INTEGER days)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - addtime(TIME datetime, TIME time)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Boolean any(BOOLEAN arg)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer ascii(STRING arg)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double asin(NUMERIC arg)
+2025-11-07 08:28:17,019 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double atan(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - avg(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bit_and(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer bit_length(STRING_OR_CLOB arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bit_or(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bitand(arg0, arg1)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bitnot(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bitor(arg0, arg1)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - bitxor(arg0, arg1)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - cast(arg as Type)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - ceiling(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Character char(INTEGER arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer character_length(STRING_OR_CLOB arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Character chr(INTEGER arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - coalesce(arg0[, arg1[, ...]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String collate(STRING string as COLLATION collation)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String concat(STRING string0[, STRING string1[, ...]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double cos(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double cosh(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double cot(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Long count([distinct ]{arg|*})
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer crc32(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double cume_dist([arg0[, ...]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date curdate()
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date current date
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Time current time
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp current timestamp
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date current_date
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Instant current_instant
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Time current_time
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp current_timestamp
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Time curtime()
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date date(arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer datediff(DATE end, DATE start)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer day(DATE arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String dayname(DATE arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer dayofmonth(DATE arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer dayofweek(DATE arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer dayofyear(DATE arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double degrees(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Long dense_rank([arg0[, ...]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Boolean every(BOOLEAN arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double exp(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - first_valueANY value
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - floor(NUMERIC arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String format(TEMPORAL datetime as STRING pattern)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer hour(TIME arg)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - ifnull(arg0, arg1)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Instant instant
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer instr(STRING string, STRING pattern[, INTEGER start[, INTEGER occurrence]])
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - lagANY value[, INTEGER offset[, ANY default]]
+2025-11-07 08:28:17,020 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date last_day(DATE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - last_valueANY value
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - leadANY value[, INTEGER offset[, ANY default]]
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String left(STRING string, INTEGER length)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer length(STRING_OR_CLOB arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String listagg(STRING arg0, STRING arg1)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double ln(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalDate local date
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalDateTime local datetime
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalTime local time
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalDate local_date
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalDateTime local_datetime
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - LocalTime local_time
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp localtime
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp localtimestamp
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double log(NUMERIC arg0[, NUMERIC arg1])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double log10(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double log2(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String lower(STRING string)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String lpad(string, length[, padding])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String ltrim(STRING string[, STRING characters])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date makedate(INTEGER year, INTEGER dayofyear)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Time maketime(INTEGER hour, INTEGER min, INTEGER sec)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - max(COMPARABLE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String md5(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer microsecond(TIME arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - min(COMPARABLE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer minute(TIME arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer mod(INTEGER arg0, INTEGER arg1)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer month(DATE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String monthname(DATE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp now()
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - nth_valueANY value, INTEGER nth
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - nullif(arg0, arg1)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer octet_length(STRING_OR_CLOB arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - OffsetDateTime offset datetime
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - OffsetDateTime offset_datetime
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double percent_rank([arg0[, ...]])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double pi
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer position(STRING pattern in STRING string)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double power(NUMERIC arg0, NUMERIC arg1)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer quarter(DATE arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double radians(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double rand([INTEGER seed])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Long rank([arg0[, ...]])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String repeat(STRING string, INTEGER times)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String replace(STRING string, STRING pattern, STRING replacement)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String reverse(STRING arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String right(STRING string, INTEGER length)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - round(NUMERIC number[, INTEGER places])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Long row_number()
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String rpad(string, length[, padding])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String rtrim(STRING string[, STRING characters])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer second(TIME arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String sha(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String sha1(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String sha2(arg0, arg1)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer sign(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double sin(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double sinh(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String soundex(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String space(INTEGER arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Object sql
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double sqrt(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double stddev(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double stddev_pop(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double stddev_samp(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String str(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - subdate(DATE datetime, INTEGER days)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String substr(STRING string, INTEGER start[, INTEGER length])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - subtime(TIME datetime, TIME time)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - sum(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp sysdate()
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double tan(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double tanh(NUMERIC arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String time(arg)
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp timestamp(arg0[, arg1])
+2025-11-07 08:28:17,021 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Long|Double timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - trunc( ... )
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - truncate( ... )
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - String upper(STRING string)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Date utc_date
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Time utc_time
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Timestamp utc_timestamp
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double var_pop(NUMERIC arg)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double var_samp(NUMERIC arg)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Double variance(NUMERIC arg)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer week(DATE arg)
+2025-11-07 08:28:17,022 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.HQL_FUNCTIONS] - Integer year(DATE arg)
+2025-11-07 08:28:17,024 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.query.plan.cache] - Starting QueryInterpretationCache(2048)
+2025-11-07 08:28:17,072 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl] - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-11-07 08:28:17,073 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.event.internal.EntityCopyObserverFactoryInitiator] - Configured EntityCopyObserver strategy: disallow
+2025-11-07 08:28:17,135 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - Not known whether passed class name [edu.jpa.entity.Company] is safe
+2025-11-07 08:28:17,135 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl] - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.jpa.entity.Company
+2025-11-07 08:28:17,278 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl] - HHH000513: Unable to create the ReflectionOptimizer for [edu.jpa.entity.Company]: private accessor [name]
+2025-11-07 08:28:17,304 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.model.mapping.creation] - Starting post-init callbacks
+2025-11-07 08:28:17,304 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.model.mapping.creation] - Starting PostInitCallbackEntry : Entity(edu.jpa.entity.Company) `staticFetchableList` generator
+2025-11-07 08:28:17,305 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.model.mapping.creation] - Starting PostInitCallbackEntry : Entity(edu.jpa.entity.Company) `sqmMultiTableMutationStrategy` interpretation
+2025-11-07 08:28:17,306 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.model.mapping.creation] - Starting PostInitCallbackEntry : Entity(edu.jpa.entity.Company) `sqmMultiTableInsertStrategy` interpretation
+2025-11-07 08:28:17,354 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.sql.ast.create] - Created new SQL alias : c1_0
+2025-11-07 08:28:17,355 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.sql.ast.create] - Registration of TableGroup [StandardTableGroup(edu.jpa.entity.Company)] with identifierForTableGroup [edu.jpa.entity.Company] for NavigablePath [edu.jpa.entity.Company] 
+2025-11-07 08:28:17,358 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.sql.ast.create] - Created new SQL alias : c1_1
+2025-11-07 08:28:17,363 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.results.graph.AST] - DomainResult Graph:
+ \-EntityResultImpl [edu.jpa.entity.Company]
+ |  +-BasicFetch [edu.jpa.entity.Company.name]
+ |  \-BasicFetch [edu.jpa.entity.Company.address]
+
+2025-11-07 08:28:17,365 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.orm.sql.ast.tree] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : edu.jpa.entity.Company) {
+          primaryTableReference : Company as c1_0
+          TableReferenceJoins {
+            left  join CompanyDetail as c1_1
+          }
+        }
+      }
+    }
+
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] - Static SQL for entity: edu.jpa.entity.Company
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Version select: select Company_id from Company where Company_id=?
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Insert (0): insert into Company (Company_name,Company_id) values (?,?)
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Insert (1): insert into CompanyDetail (CompanyDetail_address,Company_id) values (?,?)
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Update (0): update Company set Company_name=? where Company_id=?
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Delete (0): delete from CompanyDetail where Company_id=?
+2025-11-07 08:28:17,371 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister] -  Delete (1): delete from Company where Company_id=?
+2025-11-07 08:28:17,384 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - No JtaPlatform was specified, checking resolver
+2025-11-07 08:28:17,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator] - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2025-11-07 08:28:17,385 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver] - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-11-07 08:28:17,385 [edu.jpa.Launcher.main()] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-07 08:28:17,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope] - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a948ef4] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@45545858]
+2025-11-07 08:28:17,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.named.NamedObjectRepository] - Checking 0 named HQL queries
+2025-11-07 08:28:17,386 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.query.named.NamedObjectRepository] - Checking 0 named SQL queries
+2025-11-07 08:28:17,394 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    alter table CompanyDetail 
+       drop 
+       foreign key FK4mv07r3mgituw6ypx9j2ovocv
+Hibernate: 
+    alter table CompanyDetail 
+       drop 
+       foreign key FK4mv07r3mgituw6ypx9j2ovocv
+2025-11-07 08:28:17,397 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.access] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5852bd5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-07 08:28:17,410 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    drop table if exists Company
+Hibernate: 
+    drop table if exists Company
+2025-11-07 08:28:17,441 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    drop table if exists CompanyDetail
+Hibernate: 
+    drop table if exists CompanyDetail
+2025-11-07 08:28:17,473 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    create table Company (
+        Company_id integer not null,
+        Company_name varchar(50) not null,
+        primary key (Company_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table Company (
+        Company_id integer not null,
+        Company_name varchar(50) not null,
+        primary key (Company_id)
+    ) engine=InnoDB
+2025-11-07 08:28:17,473 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.access] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57ce1567] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-07 08:28:17,506 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    create table CompanyDetail (
+        Company_id integer not null,
+        CompanyDetail_address varchar(100),
+        primary key (Company_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table CompanyDetail (
+        Company_id integer not null,
+        CompanyDetail_address varchar(100),
+        primary key (Company_id)
+    ) engine=InnoDB
+2025-11-07 08:28:17,540 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    alter table CompanyDetail 
+       add constraint FK4mv07r3mgituw6ypx9j2ovocv 
+       foreign key (Company_id) 
+       references Company (Company_id)
+Hibernate: 
+    alter table CompanyDetail 
+       add constraint FK4mv07r3mgituw6ypx9j2ovocv 
+       foreign key (Company_id) 
+       references Company (Company_id)
+2025-11-07 08:28:17,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryRegistry] - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1a196337
+2025-11-07 08:28:17,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryRegistry] - Registering SessionFactory: fbb04df8-a1b3-46b2-820c-e7e78cbbaa82 (<unnamed>)
+2025-11-07 08:28:17,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryRegistry] - Not binding SessionFactory to JNDI, no JNDI name configured
+2025-11-07 08:28:17,622 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryImpl] - Instantiated SessionFactory
+2025-11-07 08:28:17,642 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.stat.internal.StatisticsInitiator] - Statistics initialized [enabled=false]
+2025-11-07 08:28:17,644 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-11-07 08:28:17,644 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] - begin
+2025-11-07 08:28:17,655 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] - committing
+2025-11-07 08:28:17,655 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] - Processing flush-time cascades
+2025-11-07 08:28:17,655 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] - Dirty checking collections
+2025-11-07 08:28:17,658 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] - Flushed: 2 insertions, 0 updates, 0 deletions to 2 objects
+2025-11-07 08:28:17,658 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-11-07 08:28:17,658 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.util.EntityPrinter] - Listing entities:
+2025-11-07 08:28:17,658 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.util.EntityPrinter] - edu.jpa.entity.Company{address=Company #2 address, name=Company #2, id=2}
+2025-11-07 08:28:17,658 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.util.EntityPrinter] - edu.jpa.entity.Company{address=Company #1 address, name=Company #1, id=1}
+2025-11-07 08:28:17,666 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    insert 
+    into
+        Company
+        (Company_name, Company_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        Company
+        (Company_name, Company_id) 
+    values
+        (?, ?)
+2025-11-07 08:28:17,672 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    insert 
+    into
+        CompanyDetail
+        (CompanyDetail_address, Company_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        CompanyDetail
+        (CompanyDetail_address, Company_id) 
+    values
+        (?, ?)
+2025-11-07 08:28:17,674 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    insert 
+    into
+        Company
+        (Company_name, Company_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        Company
+        (Company_name, Company_id) 
+    values
+        (?, ?)
+2025-11-07 08:28:17,675 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.SQL] - 
+    insert 
+    into
+        CompanyDetail
+        (CompanyDetail_address, Company_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        CompanyDetail
+        (CompanyDetail_address, Company_id) 
+    values
+        (?, ?)
+2025-11-07 08:28:17,683 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] - Initiating JDBC connection release from afterTransaction
+2025-11-07 08:28:17,684 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] - Initiating JDBC connection release from afterTransaction
+2025-11-07 08:28:17,684 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.internal.SessionFactoryImpl] - HHH000031: Closing
+2025-11-07 08:28:17,685 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope] - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@495ac03] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@45545858]
+2025-11-07 08:28:17,685 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.service.internal.AbstractServiceRegistryImpl] - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2025-11-07 08:28:17,685 [edu.jpa.Launcher.main()] INFO [org.hibernate.orm.connections.pooling] - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost/DB_LAB_01?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+2025-11-07 08:28:17,688 [edu.jpa.Launcher.main()] DEBUG [org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl] - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
