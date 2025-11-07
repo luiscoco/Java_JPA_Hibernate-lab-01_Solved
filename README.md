@@ -89,3 +89,6 @@ Tip
 Ensure Workbench is connected to the same server/port as the app (localhost:3306).
 
 You can check with SELECT DATABASE(), @@port;.
+
+
+<img width="1292" height="823" alt="image" src="https://github.com/user-attachments/assets/fe3d6745-6377-4a95-85f0-02af75ddab7b" />
